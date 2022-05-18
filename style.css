@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+canvas {
+  display: block;
+}
+
+label {
+  color: white;
+}
+
+#main-app {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: min(50vw, 100vh) auto;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+}
+
+#input-panel {
+
+}
+
+@media screen and (max-width: 800px) {
+  #main-app {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: row;
+  }
+}
+
+
+ @media screen and (max-width: 400px) {
+   #main-app {
+     display: grid;
+     grid-gap: 50px;
+     grid-template-columns: auto;
+     justify-content: center;
+     align-content: center;
+     grid-auto-flow: row;
+   }
+ }
